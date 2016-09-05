@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]
+then
+    echo "Error : Number are not supplied" 2>>er
+    echo "Usage : $0 number1 number2" 2>>er
+    exit 1
+fi
+ans=`expr $1 + $2`
+echo "Sum is $ans"
